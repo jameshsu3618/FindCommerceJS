@@ -1,0 +1,453 @@
+$sans: 'Open Sans', sans-serif;
+$playfair: 'Playfair Display', serif;
+$light: rgba(0,0,0,0.1);
+$red: rgb(238, 0, 0);
+$gold: #B89A6A;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+    font-family: $sans;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+ h2 {
+   font-weight: 400;
+   font-size: 4rem;
+     @media only screen and (max-width: 950px) {
+      font-size: 3rem;
+    }
+     @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+  }
+h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+    @media only screen and (max-width: 950px) {
+     font-size: 2.5rem;
+    }
+     @media only screen and (max-width: 600px) {
+     font-size: 2rem;
+    }
+}
+h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+}
+.title {
+   text-transform: capitalize;
+   border-top: 0.7rem solid black;
+   width: max-content;
+   margin-bottom: 3rem;
+    @media only screen and (max-width: 950px) {
+     font-size: 2.5rem;
+      margin: 0 0 2rem 7rem;
+      border-top: 0.5rem solid black;
+    }
+   @media only screen and (max-width: 600px) {
+     font-size: 2rem;
+     margin: 0 0 2rem 2rem;
+    }
+}
+.subtitle {
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: $playfair;
+}
+.top {
+  padding: 4.5rem 8rem 1rem 8rem;
+      @media only screen and (max-width: 950px) {
+      padding: 2rem 2rem 1rem 2rem;
+    }
+     @media only screen and (max-width: 600px) {
+      padding: 1rem 2rem;
+    }
+}
+.line {
+  width: 100vw;
+  height: 1rem;
+  background: black;
+}
+#logo {
+  width: 20rem;
+   @media only screen and (max-width: 950px) {
+     width: 15rem;
+     margin-bottom: -4rem;
+    }
+   @media only screen and (max-width: 600px) {
+     width: 10rem;
+    }
+}
+nav {
+  padding: 0 8rem;
+  width: 100vw;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $light;
+  border-bottom: 1px solid;
+  font-family: $sans;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  @media only screen and (max-width: 950px) {
+    border-top: none;
+    padding: 0;
+    }
+  & > * {
+    cursor: pointer;
+    transition: 0.2s all ease;
+  }
+  & > div > ul {
+    list-style: none;
+    display: flex;
+     @media only screen and (max-width: 950px) {
+       display: none;
+      }
+    & > li {
+      margin-right: 2rem;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  & > .menu {
+    display: flex;
+    align-items: center;
+    & > * {
+      transition: 0.2s all ease;
+    }
+     & > span:nth-child(1) {
+      border-left: 1px solid $light;
+      padding: 1rem 0 1rem 1rem;
+      @media only screen and (max-width: 400px) {
+        border-left: none;
+        display: none;
+      }
+       & > p {
+         font-weight: 400;
+       }
+        &:hover {
+         color: $red;
+         }
+       }
+     & > span:nth-child(2) {
+      margin-left: 1.5rem;
+      position: relative;
+      top: 0.1rem;
+      border-right: 1px solid $light;
+      border-left: 1px solid $light;
+      padding: 0.8rem;
+       &:hover {
+         color: white;
+         background: $red;
+       }
+    }
+  }
+}
+.img {
+  transition: 0.2s all ease-out;
+}
+.img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.container {
+  padding: 0 8rem;
+  margin-bottom: 4rem;
+  @media only screen and (max-width: 950px) {
+  padding: 0;
+ }
+  & > .header {
+    margin: 0 12rem 4rem 12rem;
+    padding: 1rem 0 0 2rem;
+    border-left: 1px solid;
+     @media only screen and (max-width: 950px) {
+      margin: 0 6rem 3rem 6rem;
+    }
+  @media only screen and (max-width: 600px) {
+     margin: 0 2rem 3rem 2rem;
+    }
+   @media only screen and (max-width: 400px) {
+      margin: 0 1rem;
+    }
+  }
+}
+.img-1 {
+  width: 100%;
+}
+.articles {
+  border-top: 1px solid;
+}
+.gallery {
+  display: flex;
+   @media only screen and (max-width: 950px) {
+     flex-direction: column;
+    }
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.left, .right {
+    flex: 1;
+}
+.left {
+  padding: 0 1.8rem 0 0;
+    @media only screen and (max-width: 950px) {
+      padding: 0 0 4rem 0;
+    }
+}
+.img-left {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/3018170/pexels-photo-3018170.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-size: cover;
+    @media only screen and (max-width: 950px) {
+      background-position: center;
+      height: 40rem;
+    }
+}
+  .header-medium {
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 2rem;
+    @media only screen and (max-width: 950px) {
+      padding: 0 2rem;
+    }
+    & > h2 {
+      margin-bottom: 3rem;
+    }
+        & > .author-medium::before {
+        content: " ";
+        position: relative;
+        display: block;
+        top: -1.5rem;
+        left: 45%;
+        width: 4.5rem;
+        height: 6px;
+        background: white;
+     }
+}
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  overflow: auto;
+    @media only screen and (max-width: 950px) {
+      padding: 0 4rem;
+    }
+     @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+      @media only screen and (max-width: 400px) {
+      padding: 0 1rem;
+    }
+  & > .column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 1.2rem;
+    @media only screen and (max-width: 600px) {
+      flex: 1;
+      max-width: 100%;
+    }
+   & > img {
+    vertical-align: middle;
+    width: 100%;
+    }
+  }
+}
+   .header-small {
+      width: 90%;
+      padding: 1rem 1.5rem;
+      background: white;
+      position: relative;
+      margin-top: -2.5rem;
+      margin-bottom: 2rem;
+      float: right;
+      z-index: 1000;
+     &:hover {
+       color: #666;
+     }
+          & > .author::before {
+        content: " ";
+        position: relative;
+        display: block;
+        top: -0.4rem;
+        left: 0;
+        width: 2.5rem;
+        height: 4px;
+        background: $gold;
+     }
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+    @media only screen and (max-width: 950px) {
+      flex-direction: column;
+      flex-flow: column wrap;
+      max-height: 100rem;
+      padding: 0 4rem;
+    }
+    @media only screen and (max-width: 600px) {
+      max-height: 200rem;
+    }
+    @media only screen and (max-width: 400px) {
+      padding: 0 2rem;
+    }
+  & > div {
+    width: calc(25% - 1.5rem);
+    @media only screen and (max-width: 950px) {
+      width: calc(50% - 1.5rem);
+    }
+    @media only screen and (max-width: 600px) {
+      width: calc(100% - 1.5rem);
+    }
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+    }
+    & > img {
+      width: 100%;
+    }
+    & > .last {
+      &:after {
+    position:absolute;
+    right:0;
+    content: " ";
+    display:block;
+    height: 4rem;
+    border-bottom: 1px solid #ccc;
+    width:110%;
+    @media only screen and (max-width: 600px) {
+      display: none;
+     }
+    }
+  }
+    & > .more {
+      text-align: center;
+      margin-top: 75%;
+      cursor: pointer;
+      @media only screen and (max-width: 600px) {
+       margin-top: 50%;
+    }
+      p {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        &:hover {
+          color: $red;
+        }
+      }
+      button {
+        background: $red;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 0.5rem 0.4rem 0.4rem 0.5rem;
+        & > .material-icons {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+footer {
+  background: #2D2E2F;
+  width: 100vw;
+  color: white;
+  padding: 4rem 0;
+  & > div:first-child {
+    width: 100%;
+    height: 15rem;
+    background: #242526;
+    position: relative;
+    overflow: hidden;
+      @media only screen and (max-width: 950px) {
+      height: 10rem;
+    }
+    & > #big-logo {
+      height: 16rem;
+      fill: #2D2E2F;
+      position: absolute;
+      top: -0.5rem;
+      right: 10%;
+      @media only screen and (max-width: 950px) {
+       height: 11rem;
+     }
+     @media only screen and (max-width: 600px) {
+      right: 0;
+     }
+    }
+  }
+  & > div > .icons {
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 8rem;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+      @media only screen and (max-width: 950px) {
+     right: 2rem;
+    }
+    & > i {
+      padding: 0 0.5rem;
+      cursor: pointer;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  & > .text {
+    text-align: center;
+    padding: 2rem 8rem 0 8rem;
+      @media only screen and (max-width: 950px) {
+      padding: 2rem 2rem 0 2rem;
+    }
+  }
+  & > .text h6 {
+    font-family: $playfair;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  & > .text ul {
+    padding: 3rem 0;
+    list-style: none;
+    @media only screen and (max-width: 600px) {
+      line-height: 2rem;
+    }
+    & > li {
+      display: inline-block;
+      font-family: $sans;
+      font-weight: 300;
+      font-size: 0.8rem;
+      cursor: pointer;
+      padding: 0 1rem;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  & > .text p:last-child {
+    margin-top: 2rem;
+  }
+}
+
+
