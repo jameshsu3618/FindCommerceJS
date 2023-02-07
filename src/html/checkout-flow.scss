@@ -1,13 +1,15 @@
+.container {
+    display: flex;
+}
+
 .image-section {
-    width: 40%; 
-    img {
-        width: 192px;
-        height: 222px;
-    } 
-    display: inline-flex;
+    flex: 1;
 }
 .details-section {
-    width: 60%;
-    display: inline-flex;
-    justify-content: left;
+    flex: 1;
+}
+.popup {
+  border: 2px red;
+  width: 500px;
+  height: 400px;
 }
