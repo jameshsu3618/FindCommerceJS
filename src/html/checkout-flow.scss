@@ -1,0 +1,13 @@
+.image-section {
+    width: 40%; 
+    img {
+        width: 192px;
+        height: 222px;
+    } 
+    display: inline-flex;
+}
+.details-section {
+    width: 60%;
+    display: inline-flex;
+    justify-content: left;
+}
