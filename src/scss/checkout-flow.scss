@@ -1,0 +1,16 @@
+$fontType: "helvetica";
+.container {
+    display: flex;
+}
+
+.image-section {
+    flex: 1;
+}
+.details-section {
+    flex: 1;
+}
+.popup {
+  border: 2px red;
+  width: 500px;
+  height: 400px;
+}
