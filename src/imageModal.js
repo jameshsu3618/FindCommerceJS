@@ -16,17 +16,10 @@ const ImageModal = ({ imageUrl }) => {
       />
       <Modal show={show} onHide={() => setShow(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>FINDCOMMERCE</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <CheckoutFlow></CheckoutFlow>
-
+            <CheckoutFlow/>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShow(false)}>
-            Close
-          </Button>
-        </Modal.Footer>
       </Modal>
     </>
   );

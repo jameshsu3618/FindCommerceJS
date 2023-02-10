@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.find-commerce-title {
+    font-size: 25px;
+    font-weight: bold;
+    flex: 1 1 100%;
+}
+.image-section {
+    flex: 1; 
+}
+.details-section {
+    flex: 1; 
+}

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import burberryShirt from "./burberryShirt.png";
+import CheckoutOne from "./checkoutStepOne";
 
 const CheckoutFlow = () => {
   const [step, setStep] = useState(1);
@@ -28,56 +30,7 @@ const CheckoutFlow = () => {
   return (
     <div>
       {step === 1 && (
-        <div>
-          <h2>Step 1: Personal Information</h2>
-          <div>
-          <div class="product-detail">
-            <div class="find-commerce-title">
-            EKD PRINT SUIT
-            </div>
-            <div class="container">
-                <div class="image-section">
-                    <img src="/imgs/shirt.png"/>
-                </div>
-                <div class="details-section">
-                    <div class="details-price">$1050</div>
-                    <div class="details-merchant"><span>Sold by</span>Burberry</div>
-                    <div class="details-sizing">Size
-                        <div class="sizing-icons">
-                            <a href="#">XXS</a>
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                        </div>
-                    </div>
-                    <div class="details-shipping">Ship to New York from London</div>
-                    <div class="buy-btn-div"><btn>BUY NOW</btn></div>
-                </div>   
-            </div>
-              <label htmlFor="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-          <Button onClick={handleNextStep}>Next</Button>
-        </div>
+        <CheckoutOne handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep}></CheckoutOne>
       )}
       {step === 2 && (
         <div>
