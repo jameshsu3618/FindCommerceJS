@@ -8,6 +8,7 @@ const ImageModal = ({ imageUrl }) => {
   return (
     <>
       <img
+        class="img img-1"
         onClick={() => setShow(true)}
         src={imageUrl}
         alt="click to open modal"
@@ -15,7 +16,7 @@ const ImageModal = ({ imageUrl }) => {
       />
       <Modal show={show} onHide={() => setShow(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>Image Modal</Modal.Title>
+          <Modal.Title>FINDCOMMERCE</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         <CheckoutFlow></CheckoutFlow>

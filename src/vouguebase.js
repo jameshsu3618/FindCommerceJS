@@ -1,12 +1,13 @@
 import ImageModal from "./imageModal"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import burberry from "./burberry.png";
 
 const VougueBase = () => {
     return (
         <div class="vougue-base">
             <div class="line"></div>
             <div class="top">
-            VOUGE
+            BOUGE
             </div>
             <nav>
             <div class="list">
@@ -26,7 +27,7 @@ const VougueBase = () => {
             </nav>
             <div class="container">
             <h2 class="title">Shakira Shakes Up a Christmas Dinner in a Sheer Burberry Gown</h2>
-            <ImageModal imageUrl={"https://images.pexels.com/photos/1549280/pexels-photo-1549280.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"}></ImageModal>
+            <ImageModal imageUrl={burberry}></ImageModal>
             <div class="header">
                 <p class="subtitle">Lorem</p>
                 <h3>Maecenas hendrerit risus nunc, ut congue nisl porta bibendum.</h3>
