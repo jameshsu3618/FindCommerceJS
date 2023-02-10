@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import burberryShirt from "./burberryShirt.png";
 import CheckoutOne from "./checkoutStepOne";
+import CheckoutTwo from "./checkoutStepTwo";
 
 const CheckoutFlow = () => {
   const [step, setStep] = useState(1);
@@ -33,21 +34,7 @@ const CheckoutFlow = () => {
         <CheckoutOne handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep}></CheckoutOne>
       )}
       {step === 2 && (
-        <div>
-          <h2>Step 2: Shipping Address</h2>
-          <div>
-            <label htmlFor="address">Address:</label>
-            <input
-              type="text"
-              id="address"
-              name="address"
-              value={formData.address}
-              onChange={handleChange}
-            />
-          </div>
-          <Button onClick={handlePreviousStep}>Back</Button>
-          <Button onClick={handleNextStep}>Next</Button>
-        </div>
+        <CheckoutTwo handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep}></CheckoutTwo>
       )}
       {step === 3 && (
         <div>
