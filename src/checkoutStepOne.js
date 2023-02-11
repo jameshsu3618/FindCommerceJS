@@ -16,7 +16,7 @@ const CheckoutOne = ({handleNextStep, handlePreviousStep}) => {
                 <div class="details-section">
                     <div class="details-price">$1050</div>
                     <div class="details-merchant"><span>Sold by</span>Burberry</div>
-                    <div class="details-sizing">Size
+                    <div class="details-sizing"><span class="details-title">Size</span>
                         <span class="sizing-icons">
                             <a href="#">XXS</a>
                             <a href="#">XS</a>
@@ -30,7 +30,7 @@ const CheckoutOne = ({handleNextStep, handlePreviousStep}) => {
                     <div class="buy-btn-div"><Button onClick={handleNextStep}>BUY NOW</Button></div>
                 </div>   
             </div>
-            </div>
+        </div>
     )
 }
 export default CheckoutOne;

@@ -6,7 +6,7 @@ import "./checkoutStepOne.scss"
 const CheckoutTwo = ({handleNextStep, handlePreviousStep}) => {
     return (
         <div>
-        <form class="checkout-form" class="checkout-form" onsubmit="return validateForm()" >
+        <form class="checkout-form" onsubmit="return validateForm()" >
         <h3 class="form-header">Contact Information</h3>
         
         <label class="form-label" for="name">Name:</label>

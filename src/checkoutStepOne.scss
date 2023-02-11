@@ -3,8 +3,12 @@
     flex-wrap: wrap;
 }
 .find-commerce-title {
-    font-size: 25px;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+
+    letter-spacing: 0.08em;
     flex: 1 1 100%;
 }
 .image-section {
@@ -12,4 +16,53 @@
 }
 .details-section {
     flex: 1; 
+    .details-price { 
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .details-merchant {
+        span {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            margin-right: 8px;
+        }
+    }   
+    .details-sizing {
+        .details-title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            margin-right: 8px;
+        }
+        
+        .sizing-icons {
+            a {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 14px;
+                margin-right: 2px;
+                line-height: 28px;
+                color: #000000;
+            }
+        }
+    }
+    .details-shipping {
+        margin: 8px 0px;
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    button {
+        width: 172px;
+        height: 36px;
+        margin-top: 10px;
+        background: #145CE7;
+        border-radius: 8px;
+    }
 }
