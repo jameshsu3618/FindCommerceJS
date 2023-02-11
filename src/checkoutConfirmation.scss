@@ -1,0 +1,49 @@
+.confirm-container {
+    padding: 8px;
+}
+.confirm-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+.line-two {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.line-one {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.create-account-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.create-account {
+    display: flex;
+    .section {
+        flex: 1;
+        label {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        input {
+            background: #F5F5F5;
+            border-radius: 8px;
+            border: none;
+        }
+    }
+}
+.create-account-btn {
+    color: white;
+    width: 172px;
+    height: 36px;
+    margin-top: 10px;
+    background: #145CE7;
+    border: none;
+    border-radius: 8px;
+    margin-top: 12px;
+}

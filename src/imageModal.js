@@ -15,10 +15,8 @@ const ImageModal = ({ imageUrl }) => {
         style={{ cursor: "pointer" }}
       />
       <Modal show={show} onHide={() => setShow(false)}>
-        <Modal.Header closeButton>
-        </Modal.Header>
         <Modal.Body>
-            <CheckoutFlow/>
+            <CheckoutFlow handleCompleted={()=>setShow(false)}/>
         </Modal.Body>
       </Modal>
     </>
