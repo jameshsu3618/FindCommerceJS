@@ -24,7 +24,6 @@
 .create-account {
     display: flex;
     .section {
-        max-width: 50%;
         flex: 1;
         label {
             font-weight: 400;
@@ -32,6 +31,7 @@
             line-height: 17px;
         }
         input {
+            width: 100%;
             background: #F5F5F5;
             border-radius: 8px;
             border: none;
